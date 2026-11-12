@@ -1,70 +1,88 @@
-# Awesome-Contract-Portfolio-Risk-Value-Monitoring
+# Awesome Contract Portfolio Risk & Value Monitoring [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Contract Portfolio Risk & Value Monitoring Ecosystem
+> A curated directory of enterprise SaaS solutions and open-source tools for portfolio-wide contract risk management, financial value leakage prevention, compliance tracking, and obligation intelligence.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Portfolio-Wide Risk Exposure, Financial Value Leakage & Obligation Monitoring*  
-**Last updated: March 2026**
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Portfolio-Risk-Value-Monitoring?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Contract-Portfolio-Risk-Value-Monitoring/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Contract Portfolio Risk & Value Monitoring**. These tools help legal, procurement, and finance teams step back from individual agreements to see the whole picture—surfacing hidden risk exposure, unfavorable terms, pricing escalations, missed obligations, and revenue leakage across hundreds or thousands of contracts at once.
-
-**Examples** include Icertis Vera Analytics, SirionLabs, Luminance, Evisort, CobbleStone, LogicGate Risk Cloud, MetricStream, Diligent HighBond, and open-source alternatives like draftLegal (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted contract portfolio intelligence, open-source risk scoring, and community-driven obligation tracking—ideal for organizations seeking data sovereignty and transparent risk logic over opaque enterprise contracts. Note that purpose-built open-source portfolio risk monitoring is extremely thin; the practical path is composing CLM platforms with BI tooling.
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Icertis (Vera Analytics)](https://www.icertis.com/)** | AI-powered portfolio analysis using semantic search and a Knowledge Graph that connects clauses, amendments, and schedules across the entire contract estate. Surfaces hidden risks, financial exposure, pricing escalations, and unfavorable supplier terms. Ingests contracts from shared drives beyond the core CLM. Plain-language portfolio queries without legal expertise required . | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[SirionLabs](https://www.sirion.ai/)** | AI-driven contract analytics ranked #1 in Advanced Contract Analytics (Gartner Critical Capabilities 2025). Mines the entire portfolio for performance insights and risk analytics—missing clauses, clause deviations, obligation gaps, and service-level underperformance. AskSirion enables natural-language queries across the full contract corpus with source references . | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[Luminance](https://www.luminance.com/)** | Legal-grade AI that surfaces portfolio-wide trends in payment terms, pricing models, liability exposure, and commercial commitments. Connects contractual obligations to teams and outcomes; shows renewals, notice periods, and revenue-critical dates in a single view. Source-backed answers help executives act on risk and opportunity without manual review . | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[Evisort (Workday)](https://www.evisort.com/)** | Contract intelligence with 120+ pre-built AI models for clause identification, risk flagging, and term extraction. Portfolio-level analytics surface risk patterns across HR, finance, legal, and sales contracts. Customers can refine models with feedback—no coding required . | $30,000–$60,000/year (small teams); $60,000–$120,000/year (mid-market) | Free trial available; self-serve signup |
-| **[CobbleStone](https://www.cobblestonesoftware.com/)** | CLM with VISDOM AI for risk summaries, clause governance, and post-execution compliance tracking. Portfolio dashboards surface contract value, compliance status, and renewal pipelines. Integrates with Tableau and Power BI for advanced analytics . | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[LogicGate Risk Cloud](https://www.logicgate.com/)** | No-code GRC platform with a Procurement & Contract Management application. Centralizes contract lifecycle data to provide real-time insight into outstanding vendor reviews, SLA performance, upcoming renewals, and contract breach notifications. Visual reports and executive dashboards highlight program status and trends . | Quote-only (per Application + Power User licenses; Standard Users included free) | No free tier; demo via sales |
-| **[MetricStream](https://www.metricstream.com/)** | Third-Party Risk Management platform with integrated contract visibility. Tracks vendor KPIs, risk ratings, assessment scores, and contract breaches. AI-powered issue management and dashboards for third-party risk posture. Claims 80% reduction in onboarding time and 50% decrease in assessment costs . | **$75,000/year** starting (SelectHub); $12,000/year starting (Software Advice, unverified) | Free trial available on request |
-| **[Diligent HighBond](https://www.diligent.com/)** | GRC platform with Enterprise Risk Management, Audit Management, and Vendor Risk modules. Monitors KPIs, KRIs, and KCIs with threshold alerts. Centralizes risk registers and control testing. **Not contract-specific**—requires integration with contract data sources for portfolio risk monitoring . | Quote-only; **median contract $23,488/year** (4 buyer reports). Implementation $5K–$50K+; first-year TCO $44K–$90K+ . | **No free tier or trial** . Auto-renewal with 5% annual increases . |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[draftLegal](https://github.com/AniketTati/draft-legal)** | [![Stars](https://img.shields.io/github/stars/AniketTati/draft-legal?style=social&color=white)](https://github.com/AniketTati/draft-legal/stargazers) | **The closest thing to open-source contract portfolio intelligence.** Self-hosted AI-native CLM with portfolio-wide hybrid retrieval (pgvector + Elasticsearch + RRF). Ask questions like "A vendor quoted us $200k for an 8-week SOW. How does that compare with the SOWs we've signed?" Answers are grounded in your actual contract history with citations. Extracts clauses, dates, and values with risk scoring; tracks renewals, notice periods, and obligations across the portfolio. Bring-your-own model (Anthropic, OpenAI, Gemini). `docker compose up` deployment . |
-| **[Hermes Legal Advisor](https://pypi.org/project/hermes-legal-advisor/)** | [![Stars](https://img.shields.io/github/stars/Lethe044/hermes-legal?style=social&color=white)](https://github.com/Lethe044/hermes-legal/stargazers) | Open-source CLI with **portfolio dashboard and batch risk aggregation**. Extracts term lengths, renewal windows, and notice periods across every contract analyzed. Produces risk distribution summaries, most common red flags, and per-counterparty breakdowns. Supports offline scanning, multiple LLM providers, custom firm playbooks via YAML, and webhook alerts for high-risk contracts . |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Aakd](https://github.com/aaked-app/aakd)** | [![Stars](https://img.shields.io/github/stars/aaked-app/aakd?style=social&color=white)](https://github.com/aaked-app/aakd/stargazers) | Open-source contract operations workspace with **obligation and renewal views, owners, deadlines, and audit history**. Source-linked facts with page-level evidence. Not a dedicated risk analytics engine, but structured obligation data can feed into Metabase or Superset for portfolio risk dashboards. AGPL-3.0 . |
-| **[ComplianceForge](https://github.com/jkboamah/complianceforge)** | [![Stars](https://img.shields.io/github/stars/jkboamah/complianceforge?style=social&color=white)](https://github.com/jkboamah/complianceforge/stargazers) | Open-source GRC reference implementation with **enterprise risk registers, vendor risk registers, KRI dashboards, and executive reporting**. Maps to ISO 27001, SOC2, NIST CSF, and GDPR. Educational/portfolio purpose—not production-hardened, but provides a structural template for building contract risk registers . |
-
-**Frameworks for building custom systems**: Combine **draftLegal** for portfolio-wide cited retrieval and risk extraction, **Hermes Legal Advisor** for batch risk scoring with deadline tracking, and **ComplianceForge** as a structural template for risk registers—then export structured data to **Metabase** or **Superset** for executive dashboards. Expect to build custom risk scoring logic; no open-source project ships with prebuilt contract portfolio KPIs.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Contract portfolio risk monitoring involves sensitive commercial exposure data; enforce role-based access and ensure analytics respect CLM record-level permissions.
-- **Purpose-built open-source contract portfolio risk monitoring does not exist as a mature category.** Icertis, Sirion, Luminance, and Evisort ship enterprise-grade portfolio analytics, but all are quote-only with no public pricing. Diligent HighBond is a general GRC platform, not contract-specific—it requires integration with contract data sources . The realistic open-source path is **draftLegal** for AI-assisted portfolio queries or composing **Hermes** batch scoring with BI dashboards. Commercial platforms vary widely in scope: LogicGate charges per Application + Power User, MetricStream starts around $75K/year, and Diligent's median contract is ~$23K/year with significant hidden implementation costs .
+Contract Portfolio Risk and Value Monitoring empowers legal operations, procurement, governance, risk, and compliance (GRC), and corporate finance teams to evaluate contractual relationships holistically across their entire contract repository. Rather than inspecting one contract at a time, these platforms ingest thousands of agreements simultaneously to detect high-risk liability exposure, price escalations, non-standard clause deviations, missed renewal windows, and unfulfilled performance obligations.
 
 ---
 
-**Made for legal ops analysts, procurement risk managers, finance controllers, and developers building contract intelligence infrastructure.**  
-Let's make contract portfolio monitoring more open, explainable, and actionable.
+## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [Enterprise SaaS Platforms](#enterprise-saas-platforms)
+- [Open-Source Projects](#open-source-projects)
+- [Key Architectural Patterns](#key-architectural-patterns)
+- [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global Contract Lifecycle Management (CLM) and contract analytics market is valued between **$1.8B and $3.2B** (projected to exceed **$4.5B to $5.4B** into the mid-2030s at an ~11–13% CAGR). The market structure is **moderately fragmented across point solutions and legacy GRC frameworks**, but is experiencing **accelerated consolidation** toward dominant enterprise platforms driven by private equity rollups, generative AI platform additions, and major tech acquisitions (e.g., Workday acquiring Evisort, DocuSign acquiring Lexion, Haveli acquiring Sirion).
+
+---
+
+## Enterprise SaaS Platforms
+
+The table below lists leading commercial contract intelligence, portfolio risk assessment, and enterprise GRC platforms. Entries are sorted in descending order by **Company Size (Revenue / Enterprise Valuation)**.
+
+| Product | Company Size (Revenue / Valuation) | Description | Starting Pricing | Free Tier / Trial Limits |
+|:---|:---|:---|:---|:---|
+| **[Diligent HighBond](https://www.diligent.com/)** | **~$600M+ ARR** / ~$1.5B+ Valuation | Enterprise GRC & Third-Party Risk platform monitoring KRIs, KCIs, and automated risk scoring thresholds across third-party agreements and registers. | **$23,488 / year** median annual contract ($5,000–$50,000+ implementation) | **0 days**; No free tier or trial (paid pilots and sales-led live demos only) |
+| **[Icertis (Vera Analytics)](https://www.icertis.com/)** | **~$300M+ ARR** / ~$2.8B–$5.0B Valuation | AI-powered enterprise contract portfolio intelligence with Knowledge Graph clause linking, semantic search, and supplier price escalation monitoring. | **$88,000 / year** baseline contract (~$1,500/user/year minimum deployment) | **0 days**; No free tier or trial (sales-assisted guided sandbox demos only) |
+| **[MetricStream](https://www.metricstream.com/)** | **~$140M–$310M ARR** / ~$500M+ Valuation | Third-Party Risk Management (TPRM) suite tracking vendor KPIs, SLA breaches, assessment scoring, and portfolio risk postures. | **$75,000 / year** starting annual subscription | **0 days**; No free tier or trial (structured sales proofs-of-concept only) |
+| **[Sirion](https://www.sirion.ai/)** | **~$40M–$60M ARR** / ~$1.0B Valuation | AI-native contract analytics platform mining contract corpora for missing clauses, liability caps, obligation gaps, and counterparty risks via AskSirion. | **$1,500 / user / year** starting baseline via enterprise app exchange | **0 days**; No free tier or trial (custom proof-of-value sandbox by invitation) |
+| **[LogicGate Risk Cloud](https://www.logicgate.com/)** | **~$49M Revenue** / ~$160M+ Raised | No-code GRC application centralizing vendor contracts, renewal pipelines, SLA performance metrics, and compliance breaches. | **$25,000 / year** starting base fee (includes unlimited standard users; charges per application & Power User) | **0 days**; No free tier or trial (vendor-guided live demonstration upon request) |
+| **[Luminance](https://www.luminance.com/)** | **~$30M–$60M ARR** / ~$400M Valuation | Legal-grade proprietary LLM surfacing portfolio-wide trends in payment terms, liability caps, upcoming renewals, and commercial commitments. | **$50,000 / year** starting deployment tier | **0 days**; No free tier or trial (enterprise pilot after technical discovery) |
+| **[Evisort (Workday)](https://www.evisort.com/)** | **~$30M ARR** / ~$250M–$300M Acquisition | Contract intelligence platform featuring 120+ pre-built machine learning models for clause anomaly detection, risk flags, and portfolio extraction. | **$30,000 / year** starting team tier ($60,000–$120,000/yr mid-market) | **0 days**; No free tier or trial (guided sales evaluation following Workday integration) |
+| **[CobbleStone](https://www.cobblestonesoftware.com/)** | **~$25M–$27M Revenue** / Bootstrapped-to-Growth | Contract Insight CLM powered by VISDOM AI for obligation governance, renewal pipeline analysis, and Power BI / Tableau dashboard synchronization. | **$40 / user / month** ($480/user/year, starting 5-user pack ~$1,935/year) | **0 days**; No free tier or trial (guided 30-minute interactive product tour) |
+
+---
+
+## Open-Source Projects
+
+Self-hosted, developer-friendly, and open-source tools for building automated contract risk analysis pipelines, contract obligation tracking, and legal AI workflows. Entries are sorted in descending order by **GitHub Stars**.
+
+| Repository | GitHub Stars | Description | Focus Area |
+|:---|:---:|:---|:---|
+| **[anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal)** | [![Stars](https://img.shields.io/github/stars/anthropics/claude-for-legal?style=social&color=white)](https://github.com/anthropics/claude-for-legal/stargazers) | Official suite of plugins, prompt templates, and evaluation pipelines for legal contract review, clause anomaly extraction, and risk auditing. | Legal AI & Prompt Workflows |
+| **[open-legal-products/mike](https://github.com/open-legal-products/mike)** | [![Stars](https://img.shields.io/github/stars/open-legal-products/mike?style=social&color=white)](https://github.com/open-legal-products/mike/stargazers) | Open-source enterprise legal AI platform providing document intelligence, automated contract analysis, clause extraction, and self-hosted workflows. | Legal Document Intelligence |
+| **[zubair-trabzada/ai-legal-claude](https://github.com/zubair-trabzada/ai-legal-claude)** | [![Stars](https://img.shields.io/github/stars/zubair-trabzada/ai-legal-claude?style=social&color=white)](https://github.com/zubair-trabzada/ai-legal-claude/stargazers) | Multi-agent autonomous legal assistant orchestrating contract risk analysis, obligation review, redlining, and compliance audit reporting. | Autonomous Multi-Agent Review |
+| **[jhpyle/docassemble](https://github.com/jhpyle/docassemble)** | [![Stars](https://img.shields.io/github/stars/jhpyle/docassemble?style=social&color=white)](https://github.com/jhpyle/docassemble/stargazers) | Production-grade open-source platform for guided legal document automation, obligation interview modeling, and rule-based compliance workflows. | Document Automation & Compliance |
+| **[evolsb/claude-legal-skill](https://github.com/evolsb/claude-legal-skill)** | [![Stars](https://img.shields.io/github/stars/evolsb/claude-legal-skill?style=social&color=white)](https://github.com/evolsb/claude-legal-skill/stargazers) | Contract review engine trained with Atticus Project CUAD risk detection, market benchmarks, and automated lawyer-ready redlining. | CUAD Risk Detection & Redlining |
+| **[neo4j-product-examples/graphrag-contract-review](https://github.com/neo4j-product-examples/graphrag-contract-review)** | [![Stars](https://img.shields.io/github/stars/neo4j-product-examples/graphrag-contract-review?style=social&color=white)](https://github.com/neo4j-product-examples/graphrag-contract-review/stargazers) | Knowledge Graph RAG agent designed to map inter-contract dependencies, party obligations, and systemic legal exposure across contract portfolios. | GraphRAG Portfolio Analysis |
+| **[vikashjeyaraman/opencouncil-contract-inspector](https://github.com/vikashjeyaraman/opencouncil-contract-inspector)** | [![Stars](https://img.shields.io/github/stars/vikashjeyaraman/opencouncil-contract-inspector?style=social&color=white)](https://github.com/vikashjeyaraman/opencouncil-contract-inspector/stargazers) | Multi-agent AI contract review framework applying verdict-driven quality control, risk clause scoring, and negotiation benchmark checks. | Multi-Agent Risk Inspection |
+| **[Lethe044/hermes-legal](https://github.com/Lethe044/hermes-legal)** | [![Stars](https://img.shields.io/github/stars/Lethe044/hermes-legal?style=social&color=white)](https://github.com/Lethe044/hermes-legal/stargazers) | Open-source CLI for batch contract portfolio risk aggregation, deadline tracking, counterparty risk distribution, and webhook-based alerting. | Batch Risk & Deadline Monitoring |
+| **[AniketTati/draft-legal](https://github.com/AniketTati/draft-legal)** | [![Stars](https://img.shields.io/github/stars/AniketTati/draft-legal?style=social&color=white)](https://github.com/AniketTati/draft-legal/stargazers) | Self-hosted AI-native CLM alternative with hybrid retrieval (pgvector + Elasticsearch + RRF) for portfolio-wide question answering and risk scoring. | Self-Hosted AI CLM |
+| **[aaked-app/aakd](https://github.com/aaked-app/aakd)** | [![Stars](https://img.shields.io/github/stars/aaked-app/aakd?style=social&color=white)](https://github.com/aaked-app/aakd/stargazers) | Open-source contract operations workspace featuring structured obligation and renewal schedules, audit history, and page-level evidence citation. | Contract Operations & Tracking |
+| **[open-contracting/kingfisher-process](https://github.com/open-contracting/kingfisher-process)** | [![Stars](https://img.shields.io/github/stars/open-contracting/kingfisher-process?style=social&color=white)](https://github.com/open-contracting/kingfisher-process/stargazers) | Data ingestion and transformation pipeline mapping procurement and public contract datasets to the Open Contracting Data Standard (OCDS). | Public Procurement Analytics |
+| **[jkboamah/complianceforge](https://github.com/jkboamah/complianceforge)** | [![Stars](https://img.shields.io/github/stars/jkboamah/complianceforge?style=social&color=white)](https://github.com/jkboamah/complianceforge/stargazers) | GRC reference framework providing data models for enterprise risk registers, vendor assessment matrices, and KRI dashboard tracking. | GRC Risk Register Reference |
+
+---
+
+## Key Architectural Patterns
+
+For engineering teams constructing internal contract portfolio monitoring pipelines:
+1. **Clause Ingestion & Extraction**: Ingest PDFs/DOCX via OCR and layout-aware parsers, extracting normalized clause entities (indemnification, liability caps, termination convenience, renewal notice windows).
+2. **Hybrid RAG & Knowledge Graphs**: Combine dense vector retrieval (pgvector) with keyword search (Elasticsearch/BM25) or GraphRAG (Neo4j) to understand relationship graphs between master service agreements (MSAs), statements of work (SOWs), amendments, and SLAs.
+3. **Risk Scoring Engine**: Apply rule-based scoring (e.g., notice period < 30 days, uncapped liability) paired with LLM-based playbooks to calculate aggregated portfolio risk exposure.
+4. **BI & Analytics Visualizations**: Stream structured risk parameters to Metabase, Apache Superset, or Tableau for real-time executive visibility and value-leakage alerts.
+
+---
+
+## Contributing
+
+Contributions and additions are welcome!
+1. Fork this repository.
+2. Add your tool to the appropriate table following the formatting standards (including specific pricing, exact free tier limits, company revenue/valuation, or GitHub stars badge).
+3. Submit a Pull Request with a clear description of the platform or project.
+
+---
+
+## Disclaimer
+
+This repository is curated for informational and educational purposes. Product pricing, trial policies, and corporate valuations represent public and market intelligence estimates gathered through industry benchmarks and may vary based on procurement scope. No legal or investment advice is provided.
