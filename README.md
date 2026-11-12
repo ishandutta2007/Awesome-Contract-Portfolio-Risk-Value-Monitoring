@@ -7,7 +7,7 @@
 > 📑 A curated directory of enterprise SaaS solutions and open-source tools for portfolio-wide contract risk management, financial value leakage prevention, compliance tracking, and obligation intelligence.
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Portfolio-Risk-Value-Monitoring?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Contract-Portfolio-Risk-Value-Monitoring/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Portfolio-Risk-Value-Monitoring?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Contract-Portfolio-Risk-Value-Monitoring/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -53,9 +53,9 @@ The table below lists leading commercial contract intelligence, portfolio risk a
 
 ## 💻 Open-Source Projects
 
-Self-hosted, developer-friendly, and open-source tools for building automated contract risk analysis pipelines, contract obligation tracking, and legal AI workflows. Entries are sorted in descending order by **GitHub Stars**.
+Self-hosted, developer-friendly, and open-source tools for building automated contract risk analysis pipelines, contract obligation tracking, and legal AI workflows. Entries are sorted in descending order by **GitHub_Stars**.
 
-| Repository | GitHub Stars | Description | Focus Area |
+| Repository | GitHub_Stars | Description | Focus Area |
 |:---|:---:|:---|:---|
 | **[anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal)** | [![Stars](https://img.shields.io/github/stars/anthropics/claude-for-legal?style=social&color=white)](https://github.com/anthropics/claude-for-legal/stargazers) | Official suite of plugins, prompt templates, and evaluation pipelines for legal contract review, clause anomaly extraction, and risk auditing. | ⚖️ Legal AI & Prompt Workflows |
 | **[open-legal-products/mike](https://github.com/open-legal-products/mike)** | [![Stars](https://img.shields.io/github/stars/open-legal-products/mike?style=social&color=white)](https://github.com/open-legal-products/mike/stargazers) | Open-source enterprise legal AI platform providing document intelligence, automated contract analysis, clause extraction, and self-hosted workflows. | 📄 Legal Document Intelligence |
@@ -86,7 +86,7 @@ For engineering teams constructing internal contract portfolio monitoring pipeli
 
 Contributions and additions are welcome! 🙌
 1. 🍴 Fork this repository.
-2. 📝 Add your tool to the appropriate table following the formatting standards (including specific pricing, exact free tier limits, company revenue/valuation, or GitHub stars badge).
+2. 📝 Add your tool to the appropriate table following the formatting standards (including specific pricing, exact free tier limits, company revenue/valuation, or GitHub_Stars_Badge).
 3. 🚀 Submit a Pull Request with a clear description of the platform or project.
 
 ---
